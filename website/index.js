@@ -98,4 +98,83 @@
 
 // console.log(result)
 
+//how to accept user input
 
+// 1.easy way = window prompt
+// 2.professional way =html textbox
+
+// let username;
+// username=window.prompt("whats your username?");
+// console.log(username);
+
+// let username;
+// document.getElementById("mysubmit").onclick= function(){
+//   username=document.getElementById("mytext").value;
+//   console.log(username);
+// }
+
+// document.getElementById("mysubmit").onclick= function(){
+//   username=document.getElementById("mytext").value;
+//   document.getElementById("myh1").textContent=`hello ${username}`
+// }
+
+//typeconversion = change the datatype of a value to another 
+//                 {strings,number,booleans}
+
+// let age =window.prompt("how old you are:")
+// age+=1
+// console.log(age);
+
+
+// let age =window.prompt("how old you are:")
+// age=Number(age);
+// age+=1
+// console.log(`your age is ${age} and datatype of age is `,typeof age);
+
+// ++++++++++++++++++++++++++++++++++++++++++++++
+
+// let x="pizza" //NaN 'number'
+// let y="pizza" // pizza number
+// let z="pizza" //true 'number'
+
+// let x="0" // 0 ,number
+// let y="0"  // 0 number
+// let z="0" // true 'number
+
+// let x="" //0 'number'
+// let y="" // number
+// let z="" // false 'number'
+
+// let x; //NaN 'number'
+// let y; // undefined number
+// let z; // false 'number'
+
+// x=Number(x);
+// y=String(y);
+// z=Boolean(z);
+
+// console.log(x, typeof x)
+// console.log(y, typeof x)
+// console.log(z, typeof x)
+
+//++++++++++++++++++++++++++++++++++
+
+// const= a variable thats value cant be changed
+
+// let pi=3.14159
+// const PI=3.14159;
+// let radius;
+// let circumference;
+
+// radius=window.prompt(`enter the radius of a circle`)
+// radius=Number(radius)
+// circumference=2*pi*radius;
+// console.log(circumference)
+
+
+// document.getElementById("mysubmit").onclick=function(){
+//     radius=document.getElementById("mytext").value;
+//     radius=Number(radius);
+//     circumference=2*PI*radius;
+//     document.getElementById("myh3").textContent=circumference;
+// }
