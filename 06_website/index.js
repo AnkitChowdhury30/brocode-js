@@ -69,3 +69,72 @@ console.log(k);
 //++++++++++++++++++++++++
 
 //string slicing = creating a substring from aportion of string 
+
+//string.slice(start,end)
+
+const fullname="Ankit chowdhury";
+// let firstname =fullname.slice(0,2);
+// let lastname =fullname.slice(4,7);
+// let firstchar =fullname.slice(0,1);
+// let secondchar=fullname.slice(-1);
+
+
+// console.log(firstname);
+// console.log(lastname);
+// console.log(firstchar);
+// console.log(secondchar);
+
+let firstname = fullname.slice(0,fullname.indexOf(" "));
+let lastname =fullname.slice(fullname.indexOf(" ")+1);
+
+console.log(lastname)
+console.log(firstname)
+
+const email ="bro1@gmail.com";
+
+let username1 =email.slice(0,email.indexOf("@"));
+let extension =email.slice(email.indexOf("@")+1);
+
+console.log(extension)
+console.log(username1);
+
+//methode chaining = chaining one methode after another in one continuos line of code
+
+//no method chaining
+
+let username2=window.prompt("Enter your username :");
+
+username2=username2.trim();
+
+let letter =username2.charAt(0);
+letter=letter.toUpperCase();
+
+let extrachar = username2.slice(1);
+extrachar =extrachar.toLowerCase();
+
+username2=letter+extrachar;
+
+console.log(username2)
+
+//method chaingning
+
+username2 = username2.trim().charAt(0).toUpperCase()  + username2.trim().slice(1).toLowerCase();
+
+console.log(username2)
+
+//+++++++++++++++++++++++++++++++++++
+
+//logical operators and = &&
+// or = ||
+//not = !
+
+
+//++++++++++++++
+
+// = assignment operator
+// == comprator operator
+// === strict equality operator
+// != inequality operator
+// !== strict equality operator
+
+//while for dowhile 
